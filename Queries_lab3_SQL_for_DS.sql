@@ -28,8 +28,7 @@ group by dep_id;
 
 -- Query 5B: For each department retrieve the number of employees in the department, 
 --and the average employees salary in the department.--
---[Hint: Use COUNT(*) to retrieve the total count of a column, and AVG() function to-- 
---compute average salaries, and then group]--
+
 
 select dep_id, count(*), avg(salary)
 from employees
@@ -43,7 +42,7 @@ from employees
 group by dep_id;
 
 -- Query 5D: In Query 5C order the result set by Average Salary.--
---[Hint: Use ORDER BY after the GROUP BY]--
+
 
 select dep_id, count(*) as "num_employees", avg(salary) as "avg_salary"
 from employees
